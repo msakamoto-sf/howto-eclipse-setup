@@ -145,6 +145,13 @@ C:/work/devtools/jdk/jdk1.8.0_92/bin/javaw.exe
 - `TestNG`
   - `TestNG` 実行結果を表示。
 
+## GitやSubversionでチェックアウトしたMavenプロジェクトをインポートするには
+
+1. gitでリポジトリをcloneする, Subversionでリポジトリを checkout する。
+2. Eclipseを起動し、File -> Import を開く。
+   1. import source で Maven -> Existing Maven Projects を選択
+   2. Root Directory で本ディレクトリを選び、pom.xmlが認識されればそのままインポートできる。
+
 ## Cleanup/Formatterのインポート
 
 - Cleanup (Javaソースファイル保存時の自動処理) 設定のインポート:
