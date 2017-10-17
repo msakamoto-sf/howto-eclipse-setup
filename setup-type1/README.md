@@ -73,6 +73,10 @@ C:/work/devtools/jdk/jdk1.8.0_92/bin/javaw.exe
        - `Groovy-Eclipse Feature`
        - `Groovy-Eclipse M2E integration`
        - `JDT Core patch for Groovy-Eclipse plugin on Eclipse 4.5`
+- `Lombok`
+  - (詳細は後述)
+- `Swing Designer`
+  - (詳細は後述)
 
 ## Workspaceのフォントや見た目のおすすめ設定
 
@@ -158,4 +162,37 @@ https://wiki.eclipse.org/EGit/User_Guide/Remote より, `Windows` メニュー -
 - "Authentication Methos" タブで、"password" のチェックを外したか？（外してなければ、外す）
 
 なおこちらで扱えるのは OpenSSH 系のツールで生成した秘密鍵。putty系やWinSCP系のツールで生成した秘密鍵はそのままでは扱えないので、OpenSSH系にエクスポートしたものを使用するよう注意が必要。
+
+## EclipseにLombokをインストールする
+
+1. lombok.jar をインストールして実行し、EclipseにLombokをインストールする。
+   - https://projectlombok.org/
+
+参考：
+
+- Lombok - Qiita
+  - http://qiita.com/yyoshikaw/items/32a96332cc12854ca7a3
+- Lombok 使い方メモ - Qiita
+  - http://qiita.com/opengl-8080/items/671ffd4bf84fe5e32557
+
+## Swing Designerを使う
+
+GUIツールキットとしてJavaのSwingを使う場合、Eclipseであれば、Swing DesignerをインストールするとグラフィカルにSwingの画面を設計できる。
+
+- https://projects.eclipse.org/projects/tools.windowbuilder
+  - "Eclipse WindowBuilder" に Swing Desginer も含まれている。
+
+1. Help -> Install New Software の "Work with:" で `Mars - http://download.eclipse.org/releases/mars` (Marsの場合)をプルダウンから選択する。
+   - 意図としては、Eclipse本体のプロジェクトなので、使用しているEclipseのバージョンに応じた公式のリリースダウンロードURLを選択する。
+2. "Swing Designer" でフィルタし、"Swing Designer" にチェックを入れてインストールする。
+3. 既存のSwingコンポーネントのJavaソースを開く時は、"Open With" => "WindowBuilder Editor" で開く。
+
+使い方の参考記事：
+
+- 開発メモ SwingDesignerのインストールと使用
+  - http://developmentmemo.blog.fc2.com/blog-entry-140.html
+- javaで超簡単にGUIを作成するためのEclipseプラグイン「SwingDesigner」 インストール - うめすこんぶ
+  - http://konbu13.hatenablog.com/entry/2013/12/25/230637
+- 「SwingDesigner」でSwingアプリケーションをつくろう! その2～アプリケーション新規作成とコンポーネント配置 - うめすこんぶ
+  - http://konbu13.hatenablog.com/entry/2013/12/27/163202
 
