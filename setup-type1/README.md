@@ -14,10 +14,12 @@ setup-type1 対象:
    - パス名が短くなるよう、なるべくドライブから浅いフォルダに展開するようにする。
 1. JDKではなく、 https://java.com/ja/ からインストールしたJREだけで動かしてしまうことにより、JDK依存機能が使えない / JRE側の自動更新による予期せぬ副作用でトラブル。
    - 必ず手動でJDKを入れて、 eclipse.ini の `-vm` オプションで使用する `javaw.exe` を明示的に指定する。
+   - JDKをインストールするとき、コンポーネントの選択時にJREのチェックを外し、一緒にJREもインストールしないようにする。(インストール済みのJREと衝突するなどしてトラブルの遠因となる)
 
 おすすめ手順:
 
 1. http://www.oracle.com/technetwork/java/javase/downloads/index.html よりJDKをインストール
+   - JDKをインストールするとき、コンポーネントの選択時にJREのチェックを外し、一緒にJREもインストールしないようにする。(インストール済みのJREと衝突するなどしてトラブルの遠因となる)
 1. https://www.eclipse.org/downloads/packages/release/Mars/2 より「Eclipse IDE for Java EE Developers」(64bit)をダウンロード
 1. ダウンロードしたらzipを展開するが、なるべくパス名が短くなるようにする。(プラグインフォルダ・ファイル名などでWindowsのパス名の長さ制限を超える場合があるため、フォルダを深く掘った先に展開しないよう注意。展開時にエラーが出たら、より短いパス名になるよう、フォルダ階層を上にずらすこと)
 1. eclipse.exeと同じフォルダにある eclipse.ini をコピーしてバックアップした後、eclipse.ini をエディタやメモ帳で開く。
