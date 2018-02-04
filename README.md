@@ -2,7 +2,7 @@
 
 Eclipse Setup How-To and some configuration files (cleanup, formatter, ...)
 
-This is copy of SecureSkyTechnology/howto-eclipse-setup :
+This is copy of https://github.com/SecureSkyTechnology/howto-eclipse-setup :
 - `master` : sync to upstream (SecureSkyTechnology/howto-eclipse-setup) main branch.
 - `msakamoto-sf-custom` : my customized contents. (github default)
 
