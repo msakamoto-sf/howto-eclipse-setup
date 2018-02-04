@@ -75,6 +75,9 @@ C:/work/devtools/jdk/jdk1.8.0_92/bin/javaw.exe
        - `Groovy-Eclipse Feature`
        - `Groovy-Eclipse M2E integration`
        - `JDT Core patch for Groovy-Eclipse plugin on Eclipse 4.5`
+- `GitHub Flavored Markdown Viewer plugin for Eclipse`
+  - https://github.com/satyagraha/gfm_viewer
+  - https://marketplace.eclipse.org/content/github-flavored-markdown-viewer-plugin
 - `Lombok`
   - (詳細は後述)
 - `Swing Designer`
